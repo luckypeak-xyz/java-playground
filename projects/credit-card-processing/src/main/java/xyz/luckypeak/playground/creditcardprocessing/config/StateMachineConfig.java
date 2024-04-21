@@ -1,8 +1,12 @@
 package xyz.luckypeak.playground.creditcardprocessing.config;
 
 import java.util.EnumSet;
+import java.util.Random;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.messaging.support.MessageBuilder;
+import org.springframework.statemachine.StateContext;
+import org.springframework.statemachine.action.Action;
 import org.springframework.statemachine.config.EnableStateMachineFactory;
 import org.springframework.statemachine.config.StateMachineConfigurerAdapter;
 import org.springframework.statemachine.config.builders.StateMachineConfigurationConfigurer;
@@ -12,6 +16,7 @@ import org.springframework.statemachine.listener.StateMachineListenerAdapter;
 import org.springframework.statemachine.state.State;
 import xyz.luckypeak.playground.creditcardprocessing.domain.PaymentEvent;
 import xyz.luckypeak.playground.creditcardprocessing.domain.PaymentState;
+import xyz.luckypeak.playground.creditcardprocessing.service.PaymentService;
 
 @Configuration
 @EnableStateMachineFactory
@@ -37,6 +42,7 @@ public class StateMachineConfig extends StateMachineConfigurerAdapter<PaymentSta
         .source(PaymentState.NEW)
         .target(PaymentState.NEW)
         .event(PaymentEvent.PRE_AUTHORIZE)
+        .action(preAuthAction())
         .and()
         .withExternal()
         .source(PaymentState.NEW)
@@ -61,5 +67,36 @@ public class StateMachineConfig extends StateMachineConfigurerAdapter<PaymentSta
           }
         };
     config.withConfiguration().listener(listenerAdapter);
+  }
+
+  public Action<PaymentState, PaymentEvent> preAuthAction() {
+    return new Action<PaymentState, PaymentEvent>() {
+      @Override
+      public void execute(StateContext<PaymentState, PaymentEvent> context) {
+        log.info("preAuth was called");
+
+        if (new Random().nextInt(10) < 8) {
+          log.info("preAuth approved");
+          context
+              .getStateMachine()
+              .sendEvent(
+                  MessageBuilder.withPayload(PaymentEvent.PRE_AUTH_APPROVED)
+                      .setHeader(
+                          PaymentService.PAYMENT_ID_HEADER,
+                          context.getMessageHeader(PaymentService.PAYMENT_ID_HEADER))
+                      .build());
+        } else {
+          log.info("preAuth declined");
+          context
+              .getStateMachine()
+              .sendEvent(
+                  MessageBuilder.withPayload(PaymentEvent.PRE_AUTH_DECLINED)
+                      .setHeader(
+                          PaymentService.PAYMENT_ID_HEADER,
+                          context.getMessageHeader(PaymentService.PAYMENT_ID_HEADER))
+                      .build());
+        }
+      }
+    };
   }
 }

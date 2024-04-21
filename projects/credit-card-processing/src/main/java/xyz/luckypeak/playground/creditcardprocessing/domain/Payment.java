@@ -14,8 +14,7 @@ import lombok.NoArgsConstructor;
 @Entity
 public class Payment {
   @Id
-  @GeneratedValue(strategy = GenerationType.SEQUENCE)
-  @Column(name = "id", nullable = false)
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
   @Enumerated(EnumType.STRING)
