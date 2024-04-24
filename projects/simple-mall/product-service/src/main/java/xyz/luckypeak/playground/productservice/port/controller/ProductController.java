@@ -24,6 +24,8 @@ public class ProductController {
     productService.createProduct(productReqConverter.toDomain(productReq));
   }
 
+  @GetMapping
+  @ResponseBody
   public List<ProductResp> getAllProducts() {
     return productRespConverter.fromDomain(productService.getAllProducts());
   }
