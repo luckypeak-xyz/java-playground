@@ -7,5 +7,7 @@ import xyz.luckypeak.playground.productservice.port.dto.ProductResp;
 
 @Mapper(componentModel = "spring")
 public interface ProductRespConverter {
-  List<ProductResp> fromDomain(List<Product> products);
+  List<ProductResp> fromProducts(List<Product> products);
+
+  ProductResp fromProduct(Product product);
 }

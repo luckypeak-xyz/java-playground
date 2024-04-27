@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>xyz.luckypeak.playground</groupId>
-    <artifactId>product-service</artifactId>
+    <artifactId>simple-mall-product-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>product-service</name>
     <description>product-service</description>
@@ -52,6 +52,10 @@
             <groupId>org.testcontainers</groupId>
             <artifactId>junit-jupiter</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
         </dependency>
     </dependencies>
 

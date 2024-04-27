@@ -27,6 +27,18 @@ public class ProductController {
   @GetMapping
   @ResponseBody
   public List<ProductResp> getAllProducts() {
-    return productRespConverter.fromDomain(productService.getAllProducts());
+    return productRespConverter.fromProducts(productService.getAllProducts());
+  }
+
+  @GetMapping("/{id}")
+  @ResponseBody
+  public ProductResp getProduct(@PathVariable String id) {
+    return productRespConverter.fromProduct(productService.getProduct(id).orElse(null));
+  }
+
+  @PutMapping("/{id}")
+  @ResponseStatus(HttpStatus.OK)
+  public void updateProduct(@PathVariable String id, @RequestBody ProductReq productReq) {
+    productService.updateProduct(id, productReqConverter.toDomain(productReq));
   }
 }
