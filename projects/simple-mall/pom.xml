@@ -20,6 +20,7 @@
         <module>simple-mall-order-service</module>
         <module>simple-mall-product-service</module>
         <module>simple-mall-discovery-server</module>
+        <module>simple-mall-api-gateway</module>
     </modules>
 
     <properties>
