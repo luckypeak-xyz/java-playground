@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import xyz.luckypeak.playground.simplemallorderservice.dto.InventoryResp;
 
-@FeignClient(name = "inventory-service", url = "${inventory-service.url}")
+@FeignClient(name = "simple-mall-inventory-service")
 public interface InventoryClient {
   @GetMapping("/api/inventory")
   List<InventoryResp> queryInventoryBySkuCode(@RequestParam("sku-code") List<String> skuCode);

@@ -19,6 +19,7 @@
         <module>simple-mall-inventory-service</module>
         <module>simple-mall-order-service</module>
         <module>simple-mall-product-service</module>
+        <module>simple-mall-discovery-server</module>
     </modules>
 
     <properties>
