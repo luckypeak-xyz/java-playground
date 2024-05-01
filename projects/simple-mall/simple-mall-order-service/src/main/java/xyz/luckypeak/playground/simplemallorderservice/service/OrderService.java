@@ -18,7 +18,7 @@ public class OrderService {
   private final OrderRepository orderRepository;
   private final InventoryClient inventoryClient;
 
-  public void placeOrder(Order newOrder) {
+  public String placeOrder(Order newOrder) {
     newOrder.setOrderNo(UUID.randomUUID().toString());
     // Call Inventory service, and place order if product is in
     // stock
@@ -31,6 +31,7 @@ public class OrderService {
                 .allMatch(inventoryResp -> inventoryResp.getQuantity() > 0);
     if (allProductsInStack) {
       Order savedOrder = orderRepository.save(newOrder);
+      return "Order placed successfully";
     } else {
       throw new IllegalArgumentException("Product is not in stock");
     }

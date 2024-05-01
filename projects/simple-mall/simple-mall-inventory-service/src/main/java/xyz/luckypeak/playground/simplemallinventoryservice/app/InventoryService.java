@@ -2,6 +2,7 @@ package xyz.luckypeak.playground.simplemallinventoryservice.app;
 
 import java.util.List;
 import lombok.RequiredArgsConstructor;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -15,7 +16,11 @@ public class InventoryService {
   private final InventoryRepo inventoryRepo;
 
   @Transactional(readOnly = true)
+  @SneakyThrows
   public List<Inventory> queryInventoryBySkuCode(List<String> skuCodes) {
+    log.info("Wait started");
+    Thread.sleep(10000L);
+    log.info("Wait ended");
     return inventoryRepo.findBySkuCodeIn(skuCodes);
   }
 
