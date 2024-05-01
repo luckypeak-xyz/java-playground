@@ -18,9 +18,9 @@ public class InventoryService {
   @Transactional(readOnly = true)
   @SneakyThrows
   public List<Inventory> queryInventoryBySkuCode(List<String> skuCodes) {
-    log.info("Wait started");
-    Thread.sleep(10000L);
-    log.info("Wait ended");
+    //    log.info("Wait started");
+    //    Thread.sleep(10000L);
+    //    log.info("Wait ended");
     return inventoryRepo.findBySkuCodeIn(skuCodes);
   }
 

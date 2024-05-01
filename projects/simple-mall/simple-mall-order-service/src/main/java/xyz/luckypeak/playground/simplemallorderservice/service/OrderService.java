@@ -4,9 +4,11 @@ import java.util.List;
 import java.util.UUID;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import xyz.luckypeak.playground.simplemallorderservice.client.InventoryClient;
 import xyz.luckypeak.playground.simplemallorderservice.dto.InventoryResp;
+import xyz.luckypeak.playground.simplemallorderservice.event.OrderPlacedEvent;
 import xyz.luckypeak.playground.simplemallorderservice.model.Order;
 import xyz.luckypeak.playground.simplemallorderservice.model.OrderLineItems;
 import xyz.luckypeak.playground.simplemallorderservice.repository.OrderRepository;
@@ -17,6 +19,7 @@ import xyz.luckypeak.playground.simplemallorderservice.repository.OrderRepositor
 public class OrderService {
   private final OrderRepository orderRepository;
   private final InventoryClient inventoryClient;
+  private final KafkaTemplate<String, OrderPlacedEvent> kafkaTemplate;
 
   public String placeOrder(Order newOrder) {
     newOrder.setOrderNo(UUID.randomUUID().toString());
@@ -31,6 +34,7 @@ public class OrderService {
                 .allMatch(inventoryResp -> inventoryResp.getQuantity() > 0);
     if (allProductsInStack) {
       Order savedOrder = orderRepository.save(newOrder);
+      kafkaTemplate.send("notificationTopic", new OrderPlacedEvent(savedOrder.getOrderNo()));
       return "Order placed successfully";
     } else {
       throw new IllegalArgumentException("Product is not in stock");

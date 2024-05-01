@@ -21,6 +21,7 @@
         <module>simple-mall-product-service</module>
         <module>simple-mall-discovery-server</module>
         <module>simple-mall-api-gateway</module>
+        <module>simple-mall-notification-service</module>
     </modules>
 
     <properties>
