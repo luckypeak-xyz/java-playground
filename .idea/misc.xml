@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/projects/simple-bank/pom.xml" />
+        <option value="$PROJECT_DIR$/projects/order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/projects/credit-card-processing/pom.xml" />
+        <option value="$PROJECT_DIR$/projects/simple-mall/product-service/pom.xml" />
+        <option value="$PROJECT_DIR$/projects/simple-mall/simple-mall-order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/projects/simple-mall/simple-mall-product-service/pom.xml" />
+        <option value="$PROJECT_DIR$/projects/simple-mall/simple-mall-discovery-server/pom.xml" />
+        <option value="$PROJECT_DIR$/projects/simple-mall/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="temurin-21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+</project>

@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3b11bb9b-ffdc-44d5-9628-4f181b6f882f" name="Changes" comment="feat(projects): kafka 收发事件">
+      <change afterPath="$PROJECT_DIR$/basics/feign/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basics/feign/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basics/feign/src/main/java/xyz/luckypeak/playground/feign/FeignApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basics/generics/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basics/generics/src/test/java/TestGenerics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basics/rate-limiter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basics/rate-limiter/src/test/java/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basics/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basics/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
+        <option value="com.intellij.jpb.JpaEntity" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;luckypeak-xyz&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/luckypeak-xyz/java-playground.git&quot;,
+    &quot;accountId&quot;: &quot;78777a57-b891-4f03-963e-499d7d50bba8&quot;
+  }
+}</component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2fIRmDp9TYbMPdANR3zWyRfBajU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.MainTest.TestGuavaRateLimiter.executor": "Run",
+    "JUnit.MainTest.testDuration.executor": "Run",
+    "JUnit.MainTest.testLocalDate.executor": "Run",
+    "JUnit.MainTest.testLocalDateTime.executor": "Run",
+    "JUnit.MainTest.testLocalTime.executor": "Run",
+    "JUnit.MainTest.testPeriod.executor": "Run",
+    "JUnit.MainTest.testToInstance.executor": "Run",
+    "JUnit.MainTest.testZoneDateTime.executor": "Run",
+    "JUnit.PaymentServiceImplTest.preAuth.executor": "Run",
+    "JUnit.ProductServiceApplicationTests.executor": "Run",
+    "JUnit.StateMachineConfigTest.testNewStateMachine.executor": "Run",
+    "Maven.java-playground [clean,verify].executor": "Run",
+    "Maven.java-playground [clean:clean].executor": "Run",
+    "Maven.java-playground [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.DiscoveryApplication.executor": "Debug",
+    "Spring Boot.ProductServiceApplication.executor": "Debug",
+    "Spring Boot.SimpleMallApiGatewayApplication.executor": "Debug",
+    "Spring Boot.SimpleMallDiscoveryApplication.executor": "Debug",
+    "Spring Boot.SimpleMallInventoryServiceApplication.executor": "Debug",
+    "Spring Boot.SimpleMallNotificationService.executor": "Debug",
+    "Spring Boot.SimpleMallOrderServiceApplication.executor": "Debug",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "temurin-21",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.25093633",
+    "rearrange.code.on.save": "true",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "http.proxy",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="xyz.luckypeak.playground.event" />
+      <recent name="xyz.luckypeak.playground.simplemallorderservice.event" />
+      <recent name="xyz.luckypeak.playground.simplemallorderservice.port.dto" />
+      <recent name="xyz.luckypeak.playground.productservice.port.dto" />
+      <recent name="xyz.luckypeak.playground.creditcardprocessing.service" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projects/simple-mall/simple-mall-order-service/src/main/java/xyz/luckypeak/playground/simplemallorderservice/domain/model" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="xyz.luckypeak.playground.productservice" />
+      <recent name="xyz.luckypeak.playground.creditcardprocessing.service" />
+      <recent name="xyz.luckypeak.playground.creditcardprocessing.config" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="xyz.luckypeak.playground.simplemallorderservice.port.dto" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean verify" />
+      <command value="mvn clean:clean" />
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.MainTest.TestGuavaRateLimiter">
+    <configuration name="MainTest.TestGuavaRateLimiter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rate-limiter" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainTest" />
+      <option name="METHOD_NAME" value="TestGuavaRateLimiter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentServiceImplTest.preAuth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="credit-card-processing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="xyz.luckypeak.playground.creditcardprocessing.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="xyz.luckypeak.playground.creditcardprocessing.service" />
+      <option name="MAIN_CLASS_NAME" value="xyz.luckypeak.playground.creditcardprocessing.service.PaymentServiceImplTest" />
+      <option name="METHOD_NAME" value="preAuth" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="simple-mall-product-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="xyz.luckypeak.playground.productservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="xyz.luckypeak.playground.productservice" />
+      <option name="MAIN_CLASS_NAME" value="xyz.luckypeak.playground.productservice.ProductServiceApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StateMachineConfigTest.testNewStateMachine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="credit-card-processing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="xyz.luckypeak.playground.creditcardprocessing.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="xyz.luckypeak.playground.creditcardprocessing.config" />
+      <option name="MAIN_CLASS_NAME" value="xyz.luckypeak.playground.creditcardprocessing.config.StateMachineConfigTest" />
+      <option name="METHOD_NAME" value="testNewStateMachine" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreditCardProcessingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="credit-card-processing" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="xyz.luckypeak.playground.creditcardprocessing.CreditCardProcessingApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FeignApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="feign" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="xyz.luckypeak.playground.feign.FeignApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="order-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="xyz.luckypeak.playground.orderservice.OrderServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="simple-mall-product-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="xyz.luckypeak.playground.productservice.ProductServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleBankApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="simple-bank" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="xyz.luckypeak.playground.simplebank.SimpleBankApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleMallApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="simple-mall-api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="xyz.luckypeak.playground.SimpleMallApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleMallDiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="simple-mall-discovery-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="xyz.luckypeak.playground.simplemalldiscoveryserver.SimpleMallDiscoveryApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="xyz.luckypeak.playground.simplemalldiscoveryserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleMallInventoryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false" nameIsGenerated="true">
+      <module name="simple-mall-inventory-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="xyz.luckypeak.playground.simplemallinventoryservice.SimpleMallInventoryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleMallNotificationService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="simple-mall-notification-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="xyz.luckypeak.playground.SimpleMallNotificationService" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleMallOrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="simple-mall-order-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="xyz.luckypeak.playground.simplemallorderservice.SimpleMallOrderServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.MainTest.TestGuavaRateLimiter" />
+      <item itemvalue="JUnit.PaymentServiceImplTest.preAuth" />
+      <item itemvalue="JUnit.ProductServiceApplicationTests" />
+      <item itemvalue="JUnit.StateMachineConfigTest.testNewStateMachine" />
+      <item itemvalue="Spring Boot.FeignApplication" />
+      <item itemvalue="Spring Boot.SimpleMallNotificationService" />
+      <item itemvalue="Spring Boot.SimpleMallApiGatewayApplication" />
+      <item itemvalue="Spring Boot.CreditCardProcessingApplication" />
+      <item itemvalue="Spring Boot.OrderServiceApplication" />
+      <item itemvalue="Spring Boot.ProductServiceApplication" />
+      <item itemvalue="Spring Boot.SimpleBankApplication" />
+      <item itemvalue="Spring Boot.SimpleMallInventoryServiceApplication" />
+      <item itemvalue="Spring Boot.SimpleMallOrderServiceApplication" />
+      <item itemvalue="Spring Boot.SimpleMallDiscoveryApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MainTest.TestGuavaRateLimiter" />
+        <item itemvalue="Spring Boot.SimpleMallDiscoveryApplication" />
+        <item itemvalue="JUnit.ProductServiceApplicationTests" />
+        <item itemvalue="JUnit.PaymentServiceImplTest.preAuth" />
+        <item itemvalue="JUnit.StateMachineConfigTest.testNewStateMachine" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b11bb9b-ffdc-44d5-9628-4f181b6f882f" name="Changes" comment="" />
+      <created>1713486762366</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713486762366</updated>
+      <workItem from="1713486763387" duration="219000" />
+      <workItem from="1713486986718" duration="19931000" />
+      <workItem from="1713662374370" duration="170000" />
+      <workItem from="1713662562071" duration="5650000" />
+      <workItem from="1713684872531" duration="45722000" />
+      <workItem from="1714205749974" duration="3734000" />
+      <workItem from="1714209495016" duration="43001000" />
+      <workItem from="1714551879461" duration="4242000" />
+      <workItem from="1714556862573" duration="5390000" />
+      <workItem from="1714568478125" duration="31000" />
+      <workItem from="1714568521440" duration="9751000" />
+      <workItem from="1715494923501" duration="20469000" />
+      <workItem from="1715997055156" duration="1032000" />
+      <workItem from="1716040462910" duration="2492000" />
+      <workItem from="1716129498289" duration="764000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat(basics): 学习 Java8 Date Time API">
+      <option name="closed" value="true" />
+      <created>1713611383891</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713611383891</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat(basics): setup payment">
+      <option name="closed" value="true" />
+      <created>1713686391824</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713686391824</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat(projects): state machine configuration">
+      <option name="closed" value="true" />
+      <created>1713686986021</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713686986021</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat(projects): state machine transition">
+      <option name="closed" value="true" />
+      <created>1713688448747</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713688448747</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat(projects): event listener">
+      <option name="closed" value="true" />
+      <created>1713688893106</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713688893106</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat(projects): payment service">
+      <option name="closed" value="true" />
+      <created>1713689284648</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713689284648</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat(projects): restore state machine">
+      <option name="closed" value="true" />
+      <created>1713689816687</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713689816687</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat(projects): send event to state machine">
+      <option name="closed" value="true" />
+      <created>1713703208844</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713703208844</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat(projects): new product service">
+      <option name="closed" value="true" />
+      <created>1713882158556</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713882158556</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat(projects): 使用 testContainer 执行集成测试">
+      <option name="closed" value="true" />
+      <created>1713969253214</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713969253214</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat(projects): spring cache 简单使用">
+      <option name="closed" value="true" />
+      <created>1714185195397</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1714185195398</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat(projects): spring cache 使用 caffeine">
+      <option name="closed" value="true" />
+      <created>1714189436716</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1714189436716</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat(projects): 完成 order service">
+      <option name="closed" value="true" />
+      <created>1714209077162</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1714209077162</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat(projects): 服务间通信">
+      <option name="closed" value="true" />
+      <created>1714397688814</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1714397688814</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat(projects): 使用 eureka 进行服务发现">
+      <option name="closed" value="true" />
+      <created>1714481560393</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1714481560393</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feat(projects): 使用 spring cloud api gateway 搭建 api gateway">
+      <option name="closed" value="true" />
+      <created>1714484724670</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1714484724670</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat(projects): 基于 keyclock 搭建鉴权">
+      <option name="closed" value="true" />
+      <created>1714532347774</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1714532347774</updated>
+    </task>
+    <task id="LOCAL-00018" summary="feat(projects): resilience4j 熔断、超时、重试">
+      <option name="closed" value="true" />
+      <created>1714536221517</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1714536221517</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat(projects): kafka 收发事件">
+      <option name="closed" value="true" />
+      <created>1714571295981</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1714571295981</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat(basics): 学习 Java8 Date Time API" />
+    <MESSAGE value="feat(basics): setup payment" />
+    <MESSAGE value="feat(projects): state machine configuration" />
+    <MESSAGE value="feat(projects): state machine transition" />
+    <MESSAGE value="feat(projects): event listener" />
+    <MESSAGE value="feat(projects): payment service" />
+    <MESSAGE value="feat(projects): restore state machine" />
+    <MESSAGE value="feat(projects): send event to state machine" />
+    <MESSAGE value="feat(projects): new product service" />
+    <MESSAGE value="feat(projects): 使用 testContainer 执行集成测试" />
+    <MESSAGE value="feat(projects): spring cache 简单使用" />
+    <MESSAGE value="feat(projects): spring cache 使用 caffeine" />
+    <MESSAGE value="feat(projects): 完成 order service" />
+    <MESSAGE value="feat(projects): 服务间通信" />
+    <MESSAGE value="feat(projects): 使用 eureka 进行服务发现" />
+    <MESSAGE value="feat(projects): 使用 spring cloud api gateway 搭建 api gateway" />
+    <MESSAGE value="feat(projects): 基于 keyclock 搭建鉴权" />
+    <MESSAGE value="feat(projects): resilience4j 熔断、超时、重试" />
+    <MESSAGE value="feat(projects): kafka 收发事件" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(projects): kafka 收发事件" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
