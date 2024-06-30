@@ -16,6 +16,7 @@
         <module>feign</module>
         <module>rate-limiter</module>
         <module>generics</module>
+        <module>exceptions</module>
     </modules>
 
     <properties>
