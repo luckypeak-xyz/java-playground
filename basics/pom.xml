@@ -17,6 +17,7 @@
         <module>rate-limiter</module>
         <module>generics</module>
         <module>exceptions</module>
+        <module>network-programming</module>
     </modules>
 
     <properties>
