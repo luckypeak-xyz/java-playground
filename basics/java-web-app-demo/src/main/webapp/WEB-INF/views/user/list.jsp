@@ -45,7 +45,7 @@
 
 <h2>User List</h2>
 
-<a href="user?action=new" class="btn">Add New User</a>
+<a href="users?action=new" class="btn">Add New User</a>
 
 <table>
     <thead>
@@ -71,8 +71,8 @@
             <td>${user.role}</td>
             <td>
                 <div class="action-buttons">
-                    <a href="user?action=edit&id=${user.id}" class="btn">Edit</a>
-                    <a href="user?action=delete&id=${user.id}" class="btn btn-delete"
+                    <a href="users?action=edit&id=${user.id}" class="btn">Edit</a>
+                    <a href="users?action=delete&id=${user.id}" class="btn btn-delete"
                        onclick="return confirm('Are you sure you want to delete this user?');">Delete</a>
                 </div>
             </td>

@@ -16,6 +16,8 @@ public class UserDo {
 
   private UserRoleEnum role;
 
+  public UserDo() {}
+
   public UserDo(
       int id,
       String username,
