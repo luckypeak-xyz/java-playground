@@ -12,15 +12,16 @@ import xyz.luckypeak.playground.javawebappdemo.service.UserService;
 
 public class UserController extends HttpServlet {
 
-  private UserService userService;
+  private final UserService userService = new UserService();
 
-  public UserController() {
-    userService = new UserService();
-  }
-
-  public UserController(UserService userService) {
-    this.userService = userService;
-  }
+  // 不建议，手写 Servlet 的构造函数
+  //  public UserController() {
+  //    userService = new UserService();
+  //  }
+  //
+  //  public UserController(UserService userService) {
+  //    this.userService = userService;
+  //  }
 
   @Override
   protected void doGet(HttpServletRequest req, HttpServletResponse resp)
