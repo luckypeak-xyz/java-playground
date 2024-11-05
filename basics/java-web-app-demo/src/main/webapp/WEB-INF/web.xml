@@ -6,12 +6,21 @@
          version="6.0"
          metadata-complete="true">
 
+    <context-param>
+        <param-name>param-name</param-name>
+        <param-value>context-param-value</param-value>
+    </context-param>
+
     <!--servlet描述信息-->
     <!--任何一个servlet都对应一个servlet-mapping -->
     <servlet>
         <servlet-name>UserController</servlet-name>
         <!--这个位置必须是带有包名的全限定类名-->
         <servlet-class>xyz.luckypeak.playground.javawebappdemo.controller.UserController</servlet-class>
+        <init-param>
+            <param-name>param-name</param-name>
+            <param-value>servlet-param-value</param-value>
+        </init-param>
     </servlet>
 
     <!--servlet映射信息-->

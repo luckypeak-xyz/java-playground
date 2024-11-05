@@ -6,12 +6,15 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import xyz.luckypeak.playground.javawebappdemo.model.UserDo;
 import xyz.luckypeak.playground.javawebappdemo.model.UserRoleEnum;
 import xyz.luckypeak.playground.javawebappdemo.service.UserService;
 
 public class UserController extends HttpServlet {
 
+  private final Logger logger = LoggerFactory.getLogger(UserController.class);
   private final UserService userService = new UserService();
 
   // 不建议，手写 Servlet 的构造函数
@@ -26,6 +29,13 @@ public class UserController extends HttpServlet {
   @Override
   protected void doGet(HttpServletRequest req, HttpServletResponse resp)
       throws ServletException, IOException {
+
+    logger.info("servlet init param param-name: {}", this.getInitParameter("param-name"));
+
+    logger.info(
+        "servlet context param param-name: {}",
+        this.getServletContext().getInitParameter("param-name"));
+
     String action = req.getParameter("action");
     if (action == null) action = "list";
     switch (action) {
