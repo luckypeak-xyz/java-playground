@@ -19,6 +19,7 @@
         <module>exceptions</module>
         <module>network-programming</module>
         <module>java-web-app-demo</module>
+        <module>class-loader</module>
     </modules>
 
     <properties>
