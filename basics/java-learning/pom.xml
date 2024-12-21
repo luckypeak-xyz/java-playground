@@ -7,13 +7,19 @@
         <groupId>xyz.luckypeak.playground</groupId>
         <artifactId>java-playground</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>projects</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>simple-mall</module>
-    </modules>
+    <artifactId>java-learning</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

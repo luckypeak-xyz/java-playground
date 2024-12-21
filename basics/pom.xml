@@ -15,11 +15,11 @@
         <module>date-and-time</module>
         <module>feign</module>
         <module>rate-limiter</module>
-        <module>generics</module>
         <module>exceptions</module>
         <module>network-programming</module>
         <module>java-web-app-demo</module>
         <module>class-loader</module>
+        <module>java-learning</module>
     </modules>
 
     <properties>

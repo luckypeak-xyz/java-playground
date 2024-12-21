@@ -7,13 +7,10 @@
         <groupId>xyz.luckypeak.playground</groupId>
         <artifactId>java-playground</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>projects</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>simple-mall</module>
-    </modules>
+    <artifactId>spring-aop-learning</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
