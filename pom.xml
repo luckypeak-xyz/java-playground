@@ -9,8 +9,10 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>projects</module>
-        <module>basics</module>
+<!--        <module>projects</module>-->
+<!--        <module>basics</module>-->
+<!--        <module>java-learning</module>-->
+        <module>spring-learning</module>
     </modules>
 
     <properties>

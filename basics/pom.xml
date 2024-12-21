@@ -12,14 +12,12 @@
     <artifactId>basics</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>date-and-time</module>
-        <module>feign</module>
         <module>rate-limiter</module>
         <module>exceptions</module>
         <module>network-programming</module>
         <module>java-web-app-demo</module>
         <module>class-loader</module>
-        <module>java-learning</module>
+        <module>retry</module>
     </modules>
 
     <properties>
